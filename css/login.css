@@ -1,0 +1,72 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+html body {
+    margin: 0;
+    background: #FFF;
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.auth-forms {
+    margin: 40px auto;
+    width: 30%;
+    min-width: 250px;
+    background: #3b3e99;
+    padding: 20px;
+}
+
+.tab {
+    float: left;
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+}
+
+.tab label {
+    width: 100%;
+    display: block;
+}
+
+section form {
+    display: none;
+}
+
+section [type="radio"] {
+    display: none;
+}
+
+section [type="radio"]:checked + form {
+    display: block;
+}
+
+
+.field {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.field input {
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding: 0 6px;
+    box-sizing: border-box;
+}
