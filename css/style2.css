@@ -34,7 +34,7 @@ section {
     width: 40%;
     padding: 10px;
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow: auto;
 }
 
 header {
@@ -48,6 +48,7 @@ header {
     width: 150px;
     border: none;
     font-size: 12px;
+    padding: 1px 8px;
 }
 
 .menu {
@@ -117,15 +118,16 @@ header {
 
  /*-- Chat --*/
 .chat {
-    padding: 10px;
     height: 100%;
     width: 60%;
     box-sizing: border-box;
 }
 
 .chat .conversation {
-    overflow-y: scroll; 
-    height: 80%;
+    overflow: auto; 
+    height: calc(100% - 90px);
+    padding: 30px;
+    box-sizing: border-box;
 }
 
 .message {
@@ -140,7 +142,7 @@ header {
     padding: 15px 20px;
     box-sizing: border-box;
     border-radius: 20px;
-
+    position: relative;
 }
 
 .user-foto {
@@ -154,7 +156,9 @@ header {
 }
 
 .time {
-    clear: both;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
 }
 
 .message:nth-child(odd) .user-foto {
@@ -164,6 +168,11 @@ header {
 .message:nth-child(odd) .text-message {
   float: left;
   background: #9FA1DA;
+}
+
+.message:nth-child(even) .text-message .time {
+  left: 0;
+  right: auto;
 }
 
 .message:nth-child(even) .user-foto {
@@ -177,7 +186,7 @@ header {
 
 footer {
     text-align: center;
-    margin: 40px 0;
+    padding: 20px 0;
 }
 
 .message-box {
