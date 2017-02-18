@@ -34,10 +34,11 @@ html body {
     width: 50%;
     box-sizing: border-box;
     text-align: center;
-    color: #FFF;
+    color: #D5D6F0;
     font-weight: bold;
     font-size: 30px;
     position: relative;
+    margin-bottom: 30px;
 }
 
 .tab label {
@@ -69,4 +70,15 @@ section [type="radio"]:checked + form {
     font-size: 20px;
     padding: 0 6px;
     box-sizing: border-box;
+}
+
+button {
+    margin: 10px 0 25px;
+    height: 33px;
+    width: 85px;
+    border-radius: 8px;
+    background-color: #F14D7B;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
 }

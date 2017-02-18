@@ -27,7 +27,7 @@ section {
     height: 100%;
 }
 
-/*-- Contacts --*/
+/*--    Contacts    --*/
 
 .contacts {
     background: #3B3E99;
@@ -91,13 +91,13 @@ header {
     float: left;
     border: 1px solid #fff;
     border-radius: 50%;
-    width: 10%;
+    width: 55px;
     height: 55px;
 }
 
 .contact-foto img {
     border-radius: 50%;
-    width: 100%;
+    width: 55px;
     height: 55px;
 }
 
@@ -116,7 +116,7 @@ header {
      font-size: 14px;
  }
 
- /*-- Chat --*/
+ /*--     Chat     --*/
 .chat {
     height: 100%;
     width: 60%;
@@ -149,7 +149,7 @@ header {
     float: left;
     border: 1px solid #3F429B;
     border-radius: 50%;
-    width: 7%;
+    width: 55px;
     height: 55px;
     margin: 20px 0;
 
