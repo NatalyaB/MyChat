@@ -9,17 +9,11 @@
  <body> 
      <div class="container">
         <div class="auth-forms">
-            <div class="tabs clearfix">
-                <div class="tab">
-                    <label for="log-in" id="log-in-titie">Log In</label>
-                </div>
-                <div class="tab">
-                    <label for="sign-in" id="sign-in-title">Sign In</label>
-                </div>
-            </div>
+            <nav>
+                <a href="#logIn">Log In</a>  <a href="#signIn">Sing In</a>
+            </nav>
             <!--  Login form start  -->
-            <section>
-                <input type="radio" name="switch" value="log-in" id="log-in" checked>
+            <section id="logIn">
                 <form>
                     <div class="field"> 
                         <input type="text" name="userName" placeholder="User Name/E-mail">
@@ -28,14 +22,15 @@
                         <input type="password" name="password" placeholder="Password">
                     </div>
                     <button type="submit">Log In</button>
-                    <a href="#">Learn more...</a>
-                </form>
+                    <div>
+                        <a href="#">Learn more...</a>   
+                    </div>
+                </form>                               
             </section>   
             <!--  Login form end  -->
 
             <!--  SignIn from start  -->
-            <section>
-                <input type="radio" name="switch" value="sign-in" id="sign-in">
+            <section id="signIn">
                 <form>
                     <div class="field">
                         <input type="text" name="userName" placeholder="User Name">  
@@ -49,8 +44,10 @@
                     <div class="field">
                         <input type="password" name="confirm" placeholder="Confirm password">
                     </div>  
-                    <button type="submit">Sign In</button><br/>
-                    <a href="#">Learn more...</a>
+                    <button type="submit">Sign In</button>
+                    <div>
+                        <a href="#">Learn more...</a>   
+                    </div>
                 </form>
             </section>
             <!--  SignIn from end  -->
