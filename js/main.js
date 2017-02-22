@@ -12,4 +12,12 @@
     }
 
     contactButton.addEventListener("click", collapse);
+
+    // var headerMenu = document.getElementById("toggle-button");
+  
+    // headerMenu.addEventListener("click", function(event) {
+    //     var el = this.nextElementSibling;
+
+    //     el.style.display = (el.style.display === '') ? 'block' : '';
+    // });
 })();

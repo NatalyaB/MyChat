@@ -24,7 +24,6 @@ section {
 
 .contacts header {
     height: 10%;
-    text-align: center;
     margin: 15px;
     display: flex;
     justify-content: space-between;
@@ -40,9 +39,24 @@ section {
     font-size: 16px;
 }
 
+.search-box:focus {
+  outline: none;
+  border: 1px solid #F14D7B;
+  box-shadow: 0 0 10px #F14D7B;
+   }
+
+   .search {
+       position: relative;
+   }
+
 .menu {
     width: 30px;
     height: 30px;
+    position: relative;
+}
+
+.menu div {
+    cursor: pointer;
 }
 
 .menu span {
@@ -51,6 +65,40 @@ section {
     margin-top: 5px;
     background: #fff;
     display: block;
+}
+
+.menu ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    list-style: none;
+    padding: 2px;
+    margin: 0;
+    width: 150px;
+    background-color: #D5D6F0;
+    border-radius: 4px;
+}
+
+.menu li {
+    padding: 1px;
+}
+
+.menu:hover ul {
+    display: block;
+}
+
+.menu a:hover {
+    background: #F14D7B;
+}
+
+.menu a {
+     color: #3F429B;
+     text-decoration: none;
+     width: 100%;
+     display: block;
+     padding: 2px 9px;
+     box-sizing: border-box;
 }
 
 .contacts-button {
@@ -218,4 +266,34 @@ footer {
 
 .collapse .contacts-button {
     transform: rotate(135deg);
+}
+
+// ------------------------
+
+textarea {
+    resize: none;
+    font-size: 14px;
+    border-radius: 20px;
+    padding: 4px 15px;
+    box-sizing: border-box;
+}
+
+ textarea:focus {
+  outline: none;
+  border: 1px solid #F14D7B;
+  box-shadow: 0 0 10px #F14D7B;
+   }
+
+//    --- icon ----
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: #3F429B;
+    position: absolute;
+    right: 0px;
+    top: 10px;
 }
