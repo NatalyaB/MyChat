@@ -1,0 +1,19 @@
+{
+	"users": [{
+		"name": "Name Name",
+		"foto": "href=userFoto",
+		"information": {
+			"adress": "User Adress",
+			"phone": 12345678,
+			"job": "User Job"
+		}
+	}, {
+		"name": "Name Name",
+		"foto": "href=userFoto",
+		"information": {
+			"adress": "User Adress",
+			"phone": 12345678,
+			"job": "User Job"
+		}
+	}]
+}
